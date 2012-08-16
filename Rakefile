@@ -7,6 +7,9 @@ require File.expand_path('../lib/mongo_mapper/version', __FILE__)
 Rake::TestTask.new(:test) do |test|
   test.libs      << 'lib' << 'test'
   test.pattern   = 'test/**/test_*.rb'
+   # test.test_files   = ['test/unit/test_extensions.rb',
+   #                      'test/functional/test_time.rb',
+   #                      'test/functional/test_timestamps.rb']
 end
 
 task :default => :test
